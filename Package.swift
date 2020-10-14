@@ -1,16 +1,16 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
     name: "RIBs",
     platforms: [
-        .iOS(.v8),
+        .iOS(.v9),
     ],
     products: [
         .library(name: "RIBs", targets: ["RIBs"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift", from: "5.1.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.0.0-rc.1")),
     ],
     targets: [
         .target(
